@@ -1,0 +1,15 @@
+html 
+    head   
+        title Listagem de Produtos 
+    body
+        a(href='products/form') Formulario de Produtos
+        br
+        a(href='fabricantes/form') Formulário de fabricantes
+        h1 Listagem de Produtos e Fabricantes
+        ul
+        h2 Produtos:
+        each product in products
+            li= product.name
+        h2 Fabricantes:
+        each fabricante in fabricantes
+            li= fabricante.marca
